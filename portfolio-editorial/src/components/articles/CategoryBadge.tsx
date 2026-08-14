@@ -1,16 +1,18 @@
+import { categories } from "@/data/categories";
+
 type CategoryBadgeProps = {
-  name: string;
-  color?: string;
+  category: keyof typeof categories;
 };
 
 export default function CategoryBadge({
-  name,
-  color,
+  category,
 }: CategoryBadgeProps) {
+  const { name, color } = categories[category];
+
   return (
     <span
       className="text-sm uppercase tracking-wider"
-      style={color ? { color } : undefined}
+      style={{ color }}
     >
       {name}
     </span>

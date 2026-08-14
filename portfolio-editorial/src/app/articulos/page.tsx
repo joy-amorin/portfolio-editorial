@@ -1,26 +1,33 @@
 import ArticleListCard from "@/components/articles/ArticleListCard";
+import type { CategorySlug } from "@/data/categories";
 
-const articles = [
+const articles: {
+  category: CategorySlug;
+  title: string;
+  date: string;
+  image: string;
+  href: string;
+}[] = [
   {
-    category: "Cultura",
+    category: "cultura",
     title: "Historias que nacen detrás de escena",
     date: "10 de agosto de 2026",
-    image:"/articles-photo/cultura.jpeg",
+    image: "/articles-photo/candombe.jpeg",
     href: "/articulos/historias-detras-de-escena",
   },
   {
-    category: "Cultura",
+    category: "entrevistas",
     title: "El trabajo detrás de una producción musical",
     date: "8 de agosto de 2026",
-    image:"/articles-photo/candombe.jpeg",
+    image: "/articles-photo/cultura.jpeg",
     href: "/articulos/produccion-musical",
   },
   {
-    category: "Entrevistas",
-    title: "Conversaciones con artistas",
+    category: "sociedad",
+    title: "Historias de nuestra sociedad",
     date: "5 de agosto de 2026",
-    image:"/articles-photo/mate.jpg",
-    href: "/articulos/conversaciones-artistas",
+    image: "/articles-photo/mate.jpg",
+    href: "/articulos/historias-sociedad",
   },
 ];
 

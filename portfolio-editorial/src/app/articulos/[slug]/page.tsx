@@ -2,11 +2,11 @@ import CategoryBadge from "@/components/articles/CategoryBadge";
 import ArticleGallery from "@/components/articles/ArticleGallery";
 
 export default function ArticlePage() {
-  const category = "Cultura";
+  const category = "cultura";
 
   return (
     <main className="mx-auto w-full max-w-4xl px-6 py-16">
-      <CategoryBadge name={category} />
+      <CategoryBadge category={category} />
         <h1 className="mt-2 font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
           Título del artículo
         </h1>
