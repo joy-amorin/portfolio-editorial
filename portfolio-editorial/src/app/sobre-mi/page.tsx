@@ -18,7 +18,7 @@ export default function SobreMiPage() {
             </span>
 
             <h1 className="mt-2 font-heading text-5xl leading-none text-foreground md:text-6xl">
-              Carina
+              Carina da Costa
             </h1>
 
             <div className="mt-8 space-y-5 text-base leading-relaxed text-text">
