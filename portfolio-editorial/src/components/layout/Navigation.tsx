@@ -28,7 +28,7 @@ export default function Navigation() {
                 href={item.href}
                 className={`text-sm transition-colors ${
                     isActive
-                      ? "text-text border-b border-accent pb-1"
+                       ? "text-text border-b border-[var(--accent)] pb-1"
                       : "text-text hover:text-accent"
                   }`}
               >
