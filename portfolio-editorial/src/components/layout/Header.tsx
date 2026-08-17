@@ -4,7 +4,7 @@ import { LinkedInIcon } from "@/components/ui/SocialIcons";
 
 export default function Header() {
   return (
-    <header className="border-b border-border">
+   <header className="border-b border-[#303A43]">
       <div className="mx-auto grid min-h-20 w-full max-w-7xl grid-cols-3 items-center px-6">
         <div className="justify-self-start">
           <span className="font-heading text-2xl text-foreground">
