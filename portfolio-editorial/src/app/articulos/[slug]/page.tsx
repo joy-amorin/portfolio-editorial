@@ -40,9 +40,12 @@ export default function ArticlePage() {
         </div>
         <ArticleGallery 
         images={[
-          "/articles-photo/cultura.jpeg",
-          "/articles-photo/candombe.jpeg",
-          "/articles-photo/mate.jpg",
+          "/articles-photo/1.jpg",
+          "/articles-photo/2.jpg",
+          "/articles-photo/3.jpg",
+          "/articles-photo/4.jpg",
+          "/articles-photo/5.jpg",
+          "/articles-photo/6.jpg",
           
         ]} />
     </main>
