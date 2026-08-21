@@ -1,5 +1,4 @@
 type ArticleCardProps = {
-  category: string;
   title: string;
   date: string;
   image: string;
@@ -7,7 +6,6 @@ type ArticleCardProps = {
 };
 
 export default function ArticleCard({
-  category,
   title,
   date,
   image,
@@ -16,11 +14,7 @@ export default function ArticleCard({
   return (
     <article>
       <a href={href} className="group block">
-        <span className="text-sm uppercase tracking-wider text-accent">
-          {category}
-        </span>
-
-        <h2 className="mt-2 font-heading text-2xl leading-[1.05] text-foreground">
+        <h2 className="font-heading text-2xl leading-[1.05] text-foreground">
           {title}
         </h2>
 

@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import CategoryBadge from "@/components/articles/CategoryBadge";
 import ArticleGallery from "@/components/articles/ArticleGallery";
 import { articles } from "@/data/articles";
 
@@ -22,7 +21,6 @@ export default async function ArticlePage({
 
   return (
     <main className="mx-auto w-full max-w-4xl px-6 py-16">
-      <CategoryBadge category={article.category} />
 
       <h1 className="mt-2 font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
         {article.title}

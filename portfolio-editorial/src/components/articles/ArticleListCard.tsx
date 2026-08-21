@@ -1,8 +1,4 @@
-import type { CategorySlug } from "@/data/categories";
-import CategoryBadge from "./CategoryBadge";
-
 type ArticleListCardProps = {
-  category: CategorySlug;
   title: string;
   date: string;
   image: string;
@@ -10,7 +6,6 @@ type ArticleListCardProps = {
 };
 
 export default function ArticleListCard({
-  category,
   title,
   date,
   image,
@@ -31,9 +26,7 @@ export default function ArticleListCard({
         </div>
 
         <div className="p-5">
-          <CategoryBadge category={category}/>
-
-          <h2 className="mt-2 font-heading text-2xl leading-[1.05] text-foreground">
+          <h2 className="font-heading text-2xl leading-[1.05] text-foreground">
             {title}
           </h2>
 

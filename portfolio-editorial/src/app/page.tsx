@@ -10,7 +10,6 @@ export default function Home() {
     <div className="mx-auto w-full max-w-5xl px-6 py-16">
       <div className="grid gap-10 md:grid-cols-[2fr_1fr]">
         <FeaturedArticle
-          category={featuredArticle.category}
           title={featuredArticle.title}
           excerpt={featuredArticle.excerpt ?? ""}
           date={featuredArticle.date}
@@ -22,7 +21,6 @@ export default function Home() {
           {secondaryArticles.map((article) => (
             <ArticleCard
               key={article.slug}
-              category={article.category}
               title={article.title}
               date={article.date}
               image={article.image}

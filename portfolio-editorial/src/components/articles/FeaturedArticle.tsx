@@ -1,5 +1,4 @@
 type FeaturedArticleProps = {
-  category: string;
   title: string;
   excerpt: string;
   date: string;
@@ -8,7 +7,6 @@ type FeaturedArticleProps = {
 };
 
 export default function FeaturedArticle({
-  category,
   title,
   excerpt,
   date,
@@ -19,11 +17,7 @@ export default function FeaturedArticle({
     <article>
       <a href={href} className="group block">
         <div>
-          <span className="text-sm uppercase tracking-wider text-accent">
-            {category}
-          </span>
-
-          <h1 className="mt-2 font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
+          <h1 className="font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
             {title}
           </h1>
 
