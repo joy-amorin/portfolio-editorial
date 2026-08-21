@@ -1,3 +1,5 @@
+import { formatDate } from "@/lib/FormatDate";
+
 type FeaturedArticleProps = {
   title: string;
   excerpt: string;
@@ -25,7 +27,7 @@ export default function FeaturedArticle({
             {excerpt}
           </p>
 
-          <time className="mt-3 block text-sm text-text">{date}</time>
+          <time className="mt-3 block text-sm text-text">{formatDate(date)}</time>
         </div>
 
         <div className="relative mt-6 aspect-[4/3] overflow-hidden">

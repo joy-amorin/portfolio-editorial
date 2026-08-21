@@ -1,3 +1,5 @@
+import { formatDate } from "@/lib/FormatDate";
+
 type ArticleCardProps = {
   title: string;
   date: string;
@@ -26,7 +28,7 @@ export default function ArticleCard({
           />
         </div>
 
-        <time className="mt-2 block text-sm text-text">{date}</time>
+        <time className="mt-2 block text-sm text-text">{formatDate(date)}</time>
       </a>
     </article>
   );
