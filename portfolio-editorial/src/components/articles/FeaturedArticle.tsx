@@ -10,7 +10,6 @@ type FeaturedArticleProps = {
 
 export default function FeaturedArticle({
   title,
-  excerpt,
   date,
   image,
   href,
@@ -23,11 +22,7 @@ export default function FeaturedArticle({
             {title}
           </h1>
 
-          <p className="mt-3 max-w-2xl text-lg leading-relaxed text-text">
-            {excerpt}
-          </p>
-
-          <time className="mt-3 block text-sm text-text">{formatDate(date)}</time>
+         
         </div>
 
         <div className="relative mt-6 aspect-[4/3] overflow-hidden">
@@ -35,8 +30,9 @@ export default function FeaturedArticle({
             src={image}
             alt=""
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+          />  
         </div>
+         <time className="mt-3 block text-sm text-text">{formatDate(date)}</time>
       </a>
     </article>
   );
