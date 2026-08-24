@@ -18,7 +18,7 @@ export default function FeaturedArticle({
     <article>
       <a href={href} className="group block">
         <div>
-          <h1 className="font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
+          <h1 className="font-heading text-4xl leading-[1.00] text-foreground md:text-5xl">
             {title}
           </h1>
 
