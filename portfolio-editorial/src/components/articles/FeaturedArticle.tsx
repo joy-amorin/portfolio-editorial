@@ -11,7 +11,10 @@ type FeaturedArticleProps = {
 export default function FeaturedArticle({ title, date, image, href }: FeaturedArticleProps) {
   return (
     <article className="md:grid md:[grid-template-rows:subgrid] md:[grid-row:1/-1]">
-      <a href={href} className="group block md:contents">
+      <a href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block md:contents">
         <div className="md:[grid-row:1]">
           <h1 className="font-heading text-4xl leading-[1.00] text-foreground md:text-5xl">
             {title}

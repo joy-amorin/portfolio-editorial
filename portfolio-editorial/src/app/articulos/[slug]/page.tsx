@@ -67,6 +67,32 @@ export default async function ArticlePage({
           "/articles-photo/6.jpg",
         ]}
       />
+
+      {(article.instagramUrl || article.pdfUrl) && (
+        <div className="mt-12 flex flex-wrap gap-4">
+          {article.instagramUrl && (
+            <a
+              href={article.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-border px-5 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+            >
+              Ver en Instagram
+            </a>
+          )}
+
+          {article.pdfUrl && (
+            <a
+              href={article.pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-border px-5 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+            >
+              Ver PDF
+            </a>
+          )}
+        </div>
+      )}
     </main>
   );
 }
