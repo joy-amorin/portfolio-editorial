@@ -4,22 +4,21 @@ import { LinkedInIcon } from "@/components/ui/SocialIcons";
 
 export default function Header() {
   return (
-    <header className="border-b border-border">
-      <div className="mx-auto grid min-h-20 w-full max-w-7xl grid-cols-3 items-center px-6">
+    <header className="relative border-b border-border">
+      <div className="mx-auto grid min-h-20 w-full max-w-7xl grid-cols-[1fr_auto_auto] items-center px-6">
         <div className="justify-self-start">
-          <span className="font-heading text-2xl text-foreground">
+          <span className="ml-0 font-heading text-2xl text-foreground md:ml-12">
             LOGO
           </span>
         </div>
 
-        <div className="justify-self-center">
+        <div className="mr-4 justify-self-end md:mr-12">
           <Navigation />
         </div>
 
-        <div className="flex items-center gap-4 justify-self-end">
+        <div className="mr-0 flex items-center gap-4 justify-self-end md:mr-14">
           <InstagramIcon />
           <LinkedInIcon />
-          {/* Instagram */}
         </div>
       </div>
     </header>
