@@ -17,7 +17,7 @@ export default function SobreMiPage() {
               Sobre mí
             </span>
 
-            <h1 className="mt-2 font-heading text-5xl leading-none text-foreground md:text-6xl">
+            <h1 className="mt-2 font-heading text-4xl leading-none text-foreground md:text-5xl">
               Carina da Costa
             </h1>
 

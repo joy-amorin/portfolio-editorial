@@ -22,7 +22,7 @@ export default async function ArticlePage({
   return (
     <main className="mx-auto w-full max-w-4xl px-6 py-16">
 
-      <h1 className="mt-2 font-heading text-5xl leading-[1.00] text-foreground md:text-6xl">
+      <h1 className="mt-2 font-heading text-4xl leading-[1.00] text-foreground md:text-5xl">
         {article.title}
       </h1>
 
@@ -67,6 +67,32 @@ export default async function ArticlePage({
           "/articles-photo/6.jpg",
         ]}
       />
+
+      {(article.instagramUrl || article.pdfUrl) && (
+        <div className="mt-12 flex flex-wrap gap-4">
+          {article.instagramUrl && (
+            <a
+              href={article.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-border px-5 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+            >
+              Ver en Instagram
+            </a>
+          )}
+
+          {article.pdfUrl && (
+            <a
+              href={article.pdfUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-border px-5 py-3 text-sm font-medium text-foreground transition-opacity hover:opacity-70"
+            >
+              Ver PDF
+            </a>
+          )}
+        </div>
+      )}
     </main>
   );
 }

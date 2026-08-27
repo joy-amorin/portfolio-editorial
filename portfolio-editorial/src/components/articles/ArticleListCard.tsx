@@ -17,6 +17,8 @@ export default function ArticleListCard({
     <article>
       <a
         href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         className="group block overflow-hidden rounded-sm border border-border bg-card transition-colors duration-300 hover:border-accent"
       >
         <div className="relative aspect-[4/3] overflow-hidden">
