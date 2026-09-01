@@ -79,7 +79,7 @@ export default function ArticleGallery({
               key={image}
               type="button"
               onClick={() => setSelectedIndex(index)}
-              className="relative aspect-[4/3] overflow-hidden"
+              className="relative aspect-[3/2] overflow-hidden"
             >
               <img
                 src={image}
