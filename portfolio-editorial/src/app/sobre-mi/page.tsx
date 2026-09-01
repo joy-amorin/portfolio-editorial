@@ -3,9 +3,9 @@ export default function SobreMiPage() {
     <main className="mx-auto w-full max-w-6xl px-6 py-16">
       <div className="grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-start">
         <div>
-          <div className="relative aspect-[3/4] overflow-hidden">
+          <div className="relative aspect-[5/6] overflow-hidden">
             <img
-              src="/bio/foto-bio.png"
+              src="/bio/sobre-mi.jpg"
               alt="Retrato"
               className="h-full w-full object-cover"
             />
@@ -17,7 +17,7 @@ export default function SobreMiPage() {
               Sobre mí
             </span>
 
-            <h1 className="mt-2 font-heading text-4xl leading-none text-foreground md:text-5xl">
+            <h1 className="mt-2 font-heading text-3xl leading-none text-foreground md:text-4xl">
               Carina da Costa
             </h1>
 
