@@ -64,7 +64,7 @@ export default async function ArticlePage({
           "/articles-photo/3.jpg",
           "/articles-photo/4.jpg",
           "/articles-photo/5.jpg",
-          "/articles-photo/6.jpg",
+          "/articles-photo/7.jpeg",
         ]}
       />
 
